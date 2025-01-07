@@ -5,7 +5,7 @@ import axios from "axios";
 export const useAxios = () => {
 	const response = ({ url, method = "GET", body, params, headers }) => {
 		return axios({
-			url: `http://localhost:3000${url}`,
+			url: `https://uneversal-backend.onrender.com${url}`,
 			method,
 			data: body,
 			params: { ...params },
